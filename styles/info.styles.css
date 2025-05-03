@@ -1,7 +1,7 @@
 .main {
     font-family: "Arial", sans-serif;
     background-color: var(--color-dark-main);
-    min-height: 50vh;
+    min-height: 20vh;
     color: #FFFFFF;
     padding-bottom: 30px;
 }
@@ -73,16 +73,19 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
+    margin: 0 6px;
 }
 
 .main-content__info-advantage__list-item__description {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     font-weight: 400;
     font-size: clamp(14px, calc(14px + (24 - 16) * ((100vw - 320px) / (1920 - 320))), 24px);
     line-height: 1.1;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 @media screen and (width <= 1680px) {
@@ -142,5 +145,15 @@
     .main-content__info-advantage__list-item .icon {
         width: 27px;
         height: 27px;
+    }
+}
+
+@media screen and (width <= 480px) {
+    .main-content__info {
+        align-items: center;
+    }
+
+    .main-content__info-advantage__list-item__description {
+        gap: 0;
     }
 }

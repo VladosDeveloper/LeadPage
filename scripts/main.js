@@ -2,6 +2,7 @@ const burgerBtn = document.querySelector('.mobile-header__burger')
 const headerNavList = document.querySelector('header ul')
 const mobileHeader = document.querySelector('header')
 const mainContentInfoIcon = document.querySelectorAll('.main-content__info .icon')
+const headerNavListItem = document.querySelectorAll('.header-nav__list-item a')
 
 const closeIcon = `
 <svg viewBox="0 0 24 24" width="40" height="40" fill="#fff">
@@ -22,6 +23,8 @@ const burgerIcon = `
 </svg>
 `;
 
+
+
 const toggleActiveClassName = () => {
 	mobileHeader.classList.toggle('active')
 	if (mobileHeader.classList.contains('active')) {
@@ -34,6 +37,11 @@ const toggleActiveClassName = () => {
 	burgerBtn.innerHTML =  burgerIcon
 	document.body.style.overflow = '';
 }
+
+
+headerNavListItem.forEach((item) => {
+	item.addEventListener('click', toggleActiveClassName)
+})
 
 const resizeObserver = (e) => {
 	if (e.currentTarget.innerWidth < 768) {
