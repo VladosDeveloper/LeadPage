@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('normolize.css');
+@import url('header.styles.css');
+@import url('button.styles.css');
+@import url('info.styles.css');
+@import url('description.styles.css');
+@import url('contact.styles.css');
+@import url('bottom-navigation.styles.css');
+
+:root {
+    --color-dark-main: #222222;
+    --color-lighter-dark-main: #282829;
+    --color-form-background: #D5C9BE;
+}
+
+.container {
+    width: min(1920px, 100%);
+    margin: 0 auto;
+}
+

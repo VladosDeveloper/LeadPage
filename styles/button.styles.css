@@ -1,0 +1,99 @@
+.main-content__info-btn {
+    border-radius: 4px;
+    padding: 26px 50px;
+    width: 191px;
+    height: 96px;
+    margin: 40px 0 0;
+    font-weight: 700;
+    font-size: clamp(16px, calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320))), 24px);
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #222;
+    border: none;
+    transition: 0.2s linear;
+}
+
+.main-content__info-btn:hover {
+    color: #fff;
+    background-color: #282829;
+    border: 1px solid;
+}
+
+.description-btn {
+    width: 100%;
+    height: 78px;
+    margin: 20px 0 0;
+    font-size: 20px;
+    color: #282829;
+}
+
+.description-btn:hover {
+    width: 100%;
+    height: 78px;
+    margin: 20px 0 0;
+    font-size: 20px;
+    color: #fff;
+    background-color: #282829;
+    border: 1px solid;
+}
+
+.submit-btn {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    margin: 26px 0 0;
+    border-radius: 4px;
+    padding: 32px 20px;
+    height: 100px;
+    background: #282829;
+    color: #FFFFFF;
+}
+
+.submit-btn:hover {
+    background: #FFFFFF;
+    color: #282829;
+    border: 1px solid;
+}
+
+.footer-btn {
+    margin: 0;
+    width: 180px;
+    height: 78px;
+    padding: 24px 44px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+@media screen and (width <= 1600px) {
+    .main-content__info-btn {
+        padding: 10px 50px;
+        height: 66px;
+    }
+    .description-btn {
+        height: 78px;
+    }
+
+}
+
+
+@media screen and (width <= 1180px) {
+    .submit-btn {
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (width <= 680px) {
+    .main-content__info-btn {
+        padding: 10px 50px;
+        height: 46px;
+    }
+}
+
+@media screen and (width <= 580px) {
+    .submit-btn {
+        margin-top: 20px;
+    }
+}

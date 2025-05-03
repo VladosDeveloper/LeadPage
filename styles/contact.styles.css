@@ -1,0 +1,159 @@
+.contact {
+    padding: 100px 160px;
+    min-height: 628px;
+    background-color: var(--color-lighter-dark-main);
+    width: 100%;
+
+}
+
+.contact-wrapper {
+    border: 2px solid #d5c9be;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    width: 100%;
+    height: 630px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.contact-form__image {
+    position: relative;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.contact-form__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form__fields {
+    margin: 72px 20px 72px 134px ;
+    width: min(780px, 100%);
+    flex-shrink: 2
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form__title {
+    font-family: "Prata", sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, calc(16px + (54 - 16) * ((100vw - 320px) / (1920 - 320))), 54px);
+    line-height: 1.1;
+    color: #38535d;
+    margin-bottom: 45px;
+    width: min(774px, 100%);
+}
+
+.form input:not(input[type='checkbox']) {
+    border: 2px solid #d6d6d6;
+    border-radius: 4px;
+    padding: 13px 20px 13px 38px;
+    width: min(781px, 100%);
+    height: 65px;
+    gap: 16px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #55565a;
+    opacity: 0.7;
+}
+
+input[type="checkbox"] {
+    appearance: none; /* Убираем стандартный вид */
+    width: 24px;
+    height: 24px;
+    border: 2px solid #4a90e2;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #4a90e2;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.agreement {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.3;
+    color: #55565a;
+}
+#email {
+    margin: 13px 0 26px;
+}
+
+
+@media screen and (width <= 1280px) {
+    .contact-form__image:after {
+        display: none;
+    }
+    .contact-wrapper {
+        height: 580px;
+    }
+    .contact-form__fields {
+        margin: 54px 20px 54px 96px ;
+        width: min(780px, 100%);
+        flex-shrink: 2
+    }
+}
+
+@media screen and (width <= 1160px) {
+    .contact-wrapper {
+        height: 525px;
+    }
+    .contact-form__fields {
+        margin: 54px 96px;
+        width: min(780px, 100%);
+        flex-shrink: 2
+    }
+    .contact-form__image {
+        display: none;
+    }
+}
+
+@media screen and (width <= 860px) {
+    .contact-form__fields {
+        margin: 40px;
+        width: 100%;
+    }
+    .contact-wrapper {
+        height: 485px;
+    }
+    .contact {
+        padding: 0 70px 30px;
+    }
+}
+
+@media screen and (width <= 580px) {
+    .contact-form__fields {
+        margin: 40px 20px;
+    }
+    .contact-wrapper {
+        height: 385px;
+    }
+    .contact {
+        padding: 0 10px;
+        min-height: 440px;
+    }
+
+    .contact-form__title {
+        margin-bottom: 25px;
+    }
+}
